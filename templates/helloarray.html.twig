@@ -1,0 +1,13 @@
+{# Qu'est ce qu'un template?
+ C'est un fichier textuel qui permet de générer du html
+ Ici nous utiliserons twig pour gérer les templates. Twig est le language de template de Symfony.
+ Celui ci n'est pas obligatoires et les templates peuvent être créés ou gérés autrement.
+#} {# Ceci permet de faire des commentaires en twig #}
+
+<div>{{ title | upper }}</div> {# Ceci est un titre #}
+
+<ul>
+    {% for item in array %} {# % Permet de faire une itération #}
+        <li>{{ item }}</li> {# Chaque item du tableau sera affiché grâce à la balise li #}
+    {% endfor %}
+</ul>
